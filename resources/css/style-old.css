@@ -8,24 +8,23 @@ p {
   margin: 0;
 }
 
-.container {
-  display: inherit;
-  justify-content: inherit;
-  align-items: inherit;
-  width: 960px;
-  margin: 0 auto;
+.logobar {
+  display: block;
+  background-color: black;
+  width: 100%;
+  height: min-content;
 }
 
-.logobar  {
+.logobar-container {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
-  background-color: black;
-  height: min-content;
+  width: 960px;
+  margin-left: 25%;
 }
 
-.logobar .container img {
+.logobar-container img {
   height: 1.5rem;
   margin-left: 0.5rem;
 }
@@ -43,14 +42,15 @@ p {
   width: auto;
 }
 
-.banner .text {
-  margin-left: 0;
+.banner-container {
+  display: flex;
+  flex-direction: column;
+  margin-left: 25%;
   margin-top: 9rem;
   padding: 2rem 3rem;
   width: 20rem;
   height: min-content;
   background-color: black;
-  background-image: none;
 }
 
 .banner p {
@@ -66,10 +66,17 @@ p {
 }
 
 .navbar {
+  width: 100%;
+  background-color: firebrick;
+  height: min-content;
+}
+
+.navbar-container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  background-color: firebrick;
+  width: 960px;
+  margin-left: 25%;
   padding: 0.75rem 0;
 }
 
@@ -78,10 +85,12 @@ a {
   text-decoration: none;
 }
 
-.products {
+.products-container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  width: 960px;
+  margin-left: 25%;
   padding: 3rem 0;
 }
 
@@ -114,6 +123,8 @@ a {
 .lh {
   display: flex;
   justify-content: space-between;
+  width: 960px;
+  margin-left: 25%;
   margin-top: 3rem;
   margin-bottom: 4rem;
 }
@@ -135,8 +146,10 @@ a {
   margin: 0;
 }
 
-.footer {
+footer {
   display: flex;
+  align-items: center;
   min-height: 10rem;
   background-color: black;
+  padding-left: 25%;
 }
