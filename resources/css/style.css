@@ -173,8 +173,24 @@ a {
 }
 /*For small screens; this doesn't work*/
 @media only screen and (max-width: 470px) {
-  .lh {
+  .lh .container {
+    display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    margin: 0 auto;
+    width: 90%;
+  }
+  .lh-box {
+    width: inherit;
+    justify-content: center;
+  }
+  .lh-box p{
+    text-align: center;
+  }
+  .bottom {
+    margin-bottom: 0.5em;
   }
   .banner {
     height: 15rem;
@@ -192,6 +208,7 @@ a {
   }
   .product {
     width: 90%;
+    margin: 0 auto;
   }
   .footer {
     justify-content: center;
