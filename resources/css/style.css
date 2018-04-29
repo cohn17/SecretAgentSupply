@@ -42,7 +42,6 @@ p {
   height: 25rem;
   width: auto;
 }
-
 .banner .text {
   margin-left: 0;
   margin-top: 9rem;
@@ -71,6 +70,18 @@ p {
   justify-content: space-between;
   background-color: firebrick;
   padding: 0.75rem 0;
+}
+
+.menu-expand {
+  display: inherit;
+  justify-content: inherit;
+  align-items: inherit;
+}
+
+.menu-small {
+  justify-content: center;
+  align-items: inherit;
+  display: none;
 }
 
 a {
@@ -137,6 +148,54 @@ a {
 
 .footer {
   display: flex;
+  align-items: center;
   min-height: 10rem;
   background-color: black;
+}
+/*For medium screens; this works*/
+@media only screen and (max-width: 1024px) {
+  .container {
+    margin: 0;
+  }
+  .product {
+    width: 47%;
+  }
+  #glasses {
+    display: none;
+  }
+  .menu-small {
+    display: inherit;
+  }
+  .menu-expand {
+    display: none;
+  }
+}
+/*For small screens; this doesn't work*/
+@media only screen and (max-width: 470px) {
+  .lh {
+    flex-direction: column;
+  }
+  .banner {
+    height: 15rem;
+  }
+  .banner .text {
+    margin-top: 10rem;
+    padding: 1rem 2rem;
+    width: 100%;
+  }
+  .banner p {
+    font-size: 0.77rem;
+  }
+  .banner h1 {
+    font-size: 1rem;
+  }
+  .product {
+    width: 90%;
+  }
+  .footer {
+    justify-content: center;
+  }
+  #watch {
+    display: none;
+  }
 }
