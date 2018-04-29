@@ -4,6 +4,10 @@ html {
   color: white;
 }
 
+p {
+  margin: 0;
+}
+
 .logobar {
   display: block;
   background-color: black;
@@ -13,7 +17,7 @@ html {
 
 .logobar-container {
   display: flex;
-  flex: row nowrap;
+  flex-wrap: row nowrap;
   justify-content: flex-start;
   align-items: center;
   width: 960px;
@@ -51,7 +55,6 @@ html {
 
 .banner p {
   text-transform: uppercase;
-  margin: 0;
   font-weight: bold;
 }
 
@@ -70,13 +73,83 @@ html {
 
 .navbar-container {
   display: flex;
-  flex: row nowrap;
+  flex-direction: row;
   justify-content: space-between;
   width: 960px;
   margin-left: 25%;
+  padding: 0.75rem 0;
 }
 
 a {
   color: white;
   text-decoration: none;
+}
+
+.products-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 960px;
+  margin-left: 25%;
+  padding: 3rem 0;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  border: 4px solid black;
+}
+
+.product-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 13rem;
+}
+
+.product-image img {
+  width: 9rem;
+  height: auto;
+}
+
+.product p {
+  color: white;
+  background-color: black;
+  text-align: center;
+  padding: 0.5rem;
+}
+
+.lh {
+  display: flex;
+  justify-content: space-between;
+  width: 960px;
+  margin-left: 25%;
+  margin-top: 3rem;
+  margin-bottom: 4rem;
+}
+
+.lh-box {
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+}
+
+.top {
+  background-color: black;
+  padding: 1rem 2rem;
+  margin: 0;
+}
+
+.bottom {
+  color: black;
+  margin: 0;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  min-height: 10rem;
+  background-color: black;
+  padding-left: 25%;
 }
